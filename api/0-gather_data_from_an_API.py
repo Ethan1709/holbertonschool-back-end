@@ -11,18 +11,18 @@ user = response_user.json()
 todos = response_todos.json()
 
 for item in user:
-    if 'id' in item and str(item['id']) == str(sys.argv[1]):
-        n = item['id']
+    if 'id' in item and str(item.get('id')) == str(sys.argv[1]):
+        n = item.get('id')
 n -= 1
 
 i = 0
 j = 0
 li = []
 for item in todos:
-    if 'userId' in item and str(item['userId']) == str(sys.argv[1]):
+    if 'userId' in item and str(item.get('userId')) == str(sys.argv[1]):
         if item['completed'] is True:
             i += 1
-            li.append(item['title'])
+            li.append(item.get('title'))
         else:
             j += 1
 
