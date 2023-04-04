@@ -10,6 +10,7 @@ import sys
 
 if __name__ == "__main__":
 
+
     response_user = requests.get('https://jsonplaceholder.typicode.com/users')
     response_todos = requests.get('https://jsonplaceholder.typicode.com/todos')
     user = response_user.json()
@@ -30,6 +31,7 @@ if __name__ == "__main__":
                 li.append(item.get('title'))
             else:
                 j += 1
+
     EMPLOYEE_NAME = user[n]['name']
     NUMBER_OF_DONE_TASKS = i
     TOTAL_NUMBER_OF_TASKS = i + j
