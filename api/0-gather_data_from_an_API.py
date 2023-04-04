@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Writes a Python script that, using this REST API, for
+Write a Python script that, using this REST API, for
 a given employee ID, returns information about his/her TODO list progress.
 """
 
@@ -40,4 +40,3 @@ if __name__ == "__main__":
     for i in li:
         TASK_TITLE = i
         print('\t ' + TASK_TITLE)
-
