@@ -8,7 +8,6 @@ response_user = requests.get('https://jsonplaceholder.typicode.com/users')
 response_todos = requests.get('https://jsonplaceholder.typicode.com/todos')
 user = response_user.json()
 todos = response_todos.json()
-#print(todos)
 
 for item in user:
     if 'id' in item and str(item['id']) == str(sys.argv[1]):
