@@ -33,7 +33,7 @@ EMPLOYEE_NAME = user[n]['name']
 NUMBER_OF_DONE_TASKS = i
 TOTAL_NUMBER_OF_TASKS = i + j
 TASK_TITLE = ""
-print(f'Employee {EMPLOYEE_NAME} is done with tasks '
+print(f'Employee {EMPLOYEE_NAME} is done with tasks'
       f'({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
 for i in li:
     TASK_TITLE = i
