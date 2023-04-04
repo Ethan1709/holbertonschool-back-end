@@ -34,8 +34,8 @@ if __name__ == "__main__":
     TOTAL_NUMBER_OF_TASKS = i + j
     TASK_TITLE = ""
 
-    print(f'Employee {EMPLOYEE_NAME} is done with tasks'
-    f'({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
+    print(f'Employee {EMPLOYEE_NAME} is done with tasks\
+({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
     for i in li:
         TASK_TITLE = i
         print('\t ' + TASK_TITLE)
