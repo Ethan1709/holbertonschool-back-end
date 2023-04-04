@@ -10,7 +10,6 @@ import sys
 
 if __name__ == "__main__":
 
-
     response_user = requests.get('https://jsonplaceholder.typicode.com/users')
     response_todos = requests.get('https://jsonplaceholder.typicode.com/todos')
     user = response_user.json()
