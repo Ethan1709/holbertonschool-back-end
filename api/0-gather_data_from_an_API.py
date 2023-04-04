@@ -34,4 +34,4 @@ print(f'Employee {EMPLOYEE_NAME} is done with tasks\
 ({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
 for i in li:
     TASK_TITLE = i
-    print('\t ' + TASK_TITLE)
+    print('\t' + TASK_TITLE)
