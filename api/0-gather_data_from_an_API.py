@@ -29,7 +29,7 @@ for item in todos:
 EMPLOYEE_NAME = user[n]['name']
 NUMBER_OF_DONE_TASKS = i
 TOTAL_NUMBER_OF_TASKS = i + j
-print(f'Employee {EMPLOYEE_NAME} is done with\
-       tasks({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
+print(f'Employee {EMPLOYEE_NAME} is done with tasks\
+({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
 for i in li:
     print('\t ' + i)
