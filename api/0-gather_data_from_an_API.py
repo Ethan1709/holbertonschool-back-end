@@ -7,7 +7,9 @@ a given employee ID, returns information about his/her TODO list progress.
 import requests
 import sys
 
+
 if __name__ == "__main__":
+
     response_user = requests.get('https://jsonplaceholder.typicode.com/users')
     response_todos = requests.get('https://jsonplaceholder.typicode.com/todos')
     user = response_user.json()
@@ -28,14 +30,12 @@ if __name__ == "__main__":
                 li.append(item.get('title'))
             else:
                 j += 1
-
     EMPLOYEE_NAME = user[n]['name']
     NUMBER_OF_DONE_TASKS = i
     TOTAL_NUMBER_OF_TASKS = i + j
     TASK_TITLE = ""
-
     print(f'Employee {EMPLOYEE_NAME} is done with tasks\
-({NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
+{NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):')
     for i in li:
         TASK_TITLE = i
         print('\t ' + TASK_TITLE)
