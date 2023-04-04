@@ -20,7 +20,7 @@ j = 0
 li = []
 for item in todos:
     if 'userId' in item and str(item.get('userId')) == str(sys.argv[1]):
-        if item['completed'] is True:
+        if item.get('completed') is True:
             i += 1
             li.append(item.get('title'))
         else:
