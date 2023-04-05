@@ -5,7 +5,6 @@ a given employee ID, returns information about his/her TODO list progress.
 """
 
 import csv
-import json
 import requests
 import sys
 
@@ -23,7 +22,7 @@ if __name__ == "__main__":
             u_n = item.get('username')
 
     with open(str(sys.argv[1]) + ".csv", 'w') as f:
-        csv_file = csv.writer(f)
+        csv_file = csv.writer(f, quoting=csv.QUOTE_ALL)
         for item in todos:
             if 'userId' in item\
                   and str(item.get('userId')) == str(sys.argv[1]):
