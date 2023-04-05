@@ -4,14 +4,14 @@ Writes a Python script that, using this REST API, for
 a given employee ID, returns information about his/her TODO list progress.
 """
 
-import requests
+from requests import get
 import sys
 
 
 if __name__ == "__main__":
 
-    response_user = requests.get('https://jsonplaceholder.typicode.com/users')
-    response_todos = requests.get('https://jsonplaceholder.typicode.com/todos')
+    response_user = get('https://jsonplaceholder.typicode.com/users')
+    response_todos = get('https://jsonplaceholder.typicode.com/todos')
     user = response_user.json()
     todos = response_todos.json()
 
