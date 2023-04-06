@@ -22,7 +22,6 @@ if __name__ == "__main__":
             n = item.get('id')
             u_n = item.get('username')
 
-
     li = []
     for item in todos:
         if 'userId' in item and str(item.get('userId')) == str(sys.argv[1]):
