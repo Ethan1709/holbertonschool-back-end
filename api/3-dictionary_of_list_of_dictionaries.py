@@ -17,11 +17,11 @@ if __name__ == "__main__":
 
     d = {}
     for item in user:
-        n = str(item.get('id'))
+        n = item.get('id')
         u_n = item.get('username')
         li = []
         for i in todos:
-            if i.get('userId') == item.get('id'):
+            if i.get('userId') == n:
                 new_d = {}
                 new_d['username'] = u_n
                 new_d['task'] = i.get('title')
