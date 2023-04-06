@@ -19,7 +19,7 @@ if __name__ == "__main__":
     d = {}
     for item in user:
         if 'id' in item and str(item.get('id')) == str(sys.argv[1]):
-            n = item.get('id')
+            n = str(item.get('id'))
             u_n = item.get('username')
 
     li = []
