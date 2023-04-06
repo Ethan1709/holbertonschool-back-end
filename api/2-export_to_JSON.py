@@ -26,11 +26,9 @@ if __name__ == "__main__":
     for item in todos:
         if 'userId' in item and str(item.get('userId')) == str(sys.argv[1]):
             new_d = {}
-            t = str(item.get('title'))
-            c = str(item.get('completed'))
-            new_d.update({"task": t})
-            new_d.update({"completed": c})
-            new_d.update({"username": u_n})
+            new_d['task'] = item.get('title')
+            new_d['completed'] = item.get('completed')
+            new_d['username'] = u_n
             li.append(new_d)
 
     d[n] = li
