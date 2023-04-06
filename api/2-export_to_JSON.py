@@ -34,4 +34,6 @@ if __name__ == "__main__":
             li.append(new_d)
 
     d[n] = li
-    print(d)
+
+    with open(str(sys.argv[1]) + ".json", 'w') as f:
+        json.dump(d, f)
